@@ -1,0 +1,30 @@
+img{
+    width: 200px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    max-width: 300px;
+    /* border: 1px solid; */
+}
+
+label, input, .control-btn{
+    cursor: pointer;
+}
+
+.output, .message{
+    margin-top: 50px;
+    font-size: 34px;
+    text-align: center;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+         <link rel="icon" href="/favicon.ico?v=2">
+    <link rel="stylesheet" href="styles.css">
+    <title>ApneaApp</title>
+</head>
+<body>
+    <h1>Apnea Timer</h1>
+    <img src="apneaAppLogo.png" alt="Apnes App Logo">
+    <div id="controls" class="controls">
+        <label for="initialDuration">Initial Duration:</label>
+        <input type="number" id="initialDuration" value="60"><br>
+
+        <label for="finalLimit">Final Limit:</label>
+        <input type="number" id="finalLimit" value="180"><br>
+
+        <label for="progressFactor">Progress Factor:</label>
+        <input type="number" id="progressFactor" value="60"><br>
+
+        <label for="breakDuration">Break Duration:</label>
+        <input type="number" id="breakDuration" value="60"><br>
+    </div>
+
+    <div class="buttons">
+        <button id="startButton" class="control-btn">Start</button>
+        <button id="resetButton" class="control-btn">Reset</button>
+        <label for="controlVolume">Volume</label>
+        <input type="range" name="volume" id="controlVolume" min="0" max="1" step="0.001" value="0.5">
+    </div>
+    <audio id="player" src="clockTick.mp3"></audio>
+    <div id="output" class="output">100</div>
+    <div id="message" class="message">Are you Ready?</div>
+    <script src="main.js"></script>
+</body>
+</html>
