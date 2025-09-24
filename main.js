@@ -44,7 +44,7 @@ function resetSettings() {
 
     output.textContent = '00:00';
     message.textContent = 'Are you Ready?'
-    memeImage,src = '';
+    memeImage.src = 'banner1.jpeg';
     console.log('Settings have been reset.');
 }
 
